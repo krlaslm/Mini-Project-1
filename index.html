@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovFlix</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">
+        <div id="web-title" class="web-title">MovFlix</div>
+      </div>
+    </header>
+
+    <main>
+      <div id="search-container" class="form-group">
+        <form id="form">
+          <input
+            id="search-bar"
+            type="text"
+            class="form-control"
+            placeholder="Search for a movie..."
+          />
+        </form>
+      </div>
+      <div id="genre-tags"></div>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <h1 class="watch-text">Watch Trailer</h1>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+      </div>
+      <div id="movie-list" class="row mt-4"></div>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
